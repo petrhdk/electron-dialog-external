@@ -46,6 +46,12 @@ Oddly enough, Electron's `dialog.*Sync()` function alone does not have any delay
 <br>
 
 
+### Examples?
+See [`src/_test.ts`](src/_test.ts). It calls each function with example parameters. You could use that as a starting point ;)
+
+<br>
+
+
 ### A note on errors
 Theoretically the `dialog` functions should, just like the official functions, never throw an exception (sync functions) or reject (async functions / promises).
 If it happens, then this is a bug. Please report on the [Issues page](https://github.com/pitizzzle/electron-dialog-external/issues).

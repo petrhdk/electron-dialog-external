@@ -26,12 +26,14 @@ dialog.showErrorBox(title, content)
 Please refer to the official Electron [docs](https://www.electronjs.org/docs/api/dialog) for concrete usage instructions. Everything behaves exactly the same <3.
 
 This package is built on `Electron v11.2.0`.
+
 <br>
 
 
 ### What is not supported?
 + passing an instance of [`BrowserWindow`](https://www.electronjs.org/docs/api/browser-window) as argument
 + passing an instance of [`NativeImage`](https://www.electronjs.org/docs/api/native-image) as argument
+
 <br>
 
 
@@ -40,12 +42,14 @@ If you have the choice, prefer the `Promise` functions over the `Sync` functions
 
 I suspect the delay has something to do with the deconstruction of the Electron process, which apperently takes longer if we called a dialog Sync function.
 Oddly enough, Electron's `dialog.*Sync()` function alone does not have any delay. And it is not the fault of `child_process.spawnSync()` either, because `child_process.spawn()` has the same delay if it runs an Electron process with a `dialog.*Sync()` call. The delay really has to come from the Electron "Main process" itself, which exits with delay if a `dialog.*Sync` function was used. Probably, it has something to do with the Event Loop xD.
+
 <br>
 
 
 ### A note on errors
 Theoretically the `dialog` functions should, just like the official functions, never throw an exception (sync functions) or reject (async functions / promises).
 If it happens, then this is a bug. Please report on the [Issues page](https://github.com/pitizzzle/electron-dialog-external/issues).
+
 <br>
 
 

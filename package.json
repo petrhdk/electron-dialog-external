@@ -1,8 +1,21 @@
 {
   "name": "electron-dialog-external",
-  "verion": "1.0.0",
+  "version": "1.0.0",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "keywords": [
+    "electron",
+    "scripts"
+  ],
+  "license": "MIT",
+  "author": "pitizzzle",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pitizzzle/electron-dialog-external.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pitizzzle/electron-dialog-external/issues"
+  },
   "dependencies": {
     "chalk": "^4.1.0",
     "electron": "^11.2.0"
@@ -15,7 +28,5 @@
   "scripts": {
     "start-test": "yarn transpile && node --enable-source-maps lib/_test.js",
     "transpile": "shx rm -rf lib/* && tsc -p ."
-  },
-  "version": "1.0.0",
-  "license": "MIT"
+  }
 }

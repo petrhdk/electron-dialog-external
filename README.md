@@ -59,5 +59,11 @@ If it happens, then this is a bug. Please report on the [Issues page](https://gi
 <br>
 
 
+### Troubleshooting
++ For obvious reasons, you can't use this module from an Operating System without graphical desktop. For instance, if you try to use `electron-dialog-external` from within Windows Subsystem for Linux (WSL), Electron will fail.
+
+<br>
+
+
 ### Cue
 If you know an easier way to achieve external usage of the `dialog` module than using child processes, please tell me ([Issues page](https://github.com/pitizzzle/electron-dialog-external/issues)).

@@ -1,7 +1,8 @@
 # electron-dialog-external
 
-Directly use the core functions from Electron's [`dialog`](https://www.electronjs.org/docs/api/dialog) module.  
+`electron-dialog-external` ([npm](https://www.npmjs.com/package/electron-dialog-external)) is a Node.js package which exposes the [`dialog`](https://www.electronjs.org/docs/api/dialog) API from Electron.js, without you having to actually build an Electron app.
 This is really useful for small Node.js applications and scripts.
+
 <br>
 
 ```bash
